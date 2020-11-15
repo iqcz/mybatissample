@@ -33,7 +33,7 @@ public class StudentService {
         try {
             StudentMapper studentMapper = sqlSession.getMapper(StudentMapper.class);
             return studentMapper.findStudentById(studId);
-            //return sqlSession.selectOne("com.mybatis3.StudentMapper.findStudentById", studId);
+//            return sqlSession.selectOne("com.mybatis3.mappers.StudentMapper.findStudentById", studId);
         } finally {
             sqlSession.close();
         }
